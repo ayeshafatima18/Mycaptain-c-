@@ -1,0 +1,16 @@
+# Mycaptain-cpp
+//Write a C++ Program to Find Size of int, float, double and char in Your System
+#include <iostream>
+using namespace std;
+int main() 
+{    
+    cout << "Size of char: " << sizeof(char) << " byte";   //sizeof is the operator here; syntax : sizeof(data_type)
+    cout << "Size of int: " << sizeof(int) << " bytes";
+    cout << "Size of float: " << sizeof(float) << " bytes";
+    cout << "Size of double: " << sizeof(double) << " bytes";
+    return 0;
+}
+
+//Output
+
+//Size of char: 1 byte Size of int: 4 bytes Size of float: 4 bytes Size of double: 8 bytes
