@@ -1,0 +1,43 @@
+//C++ program where we check if a person is eligible to vote or not.
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int age;
+    cout <<"Enter your age : "  <<endl;
+    cin >> age;
+    if(age>=18){
+        cout<<"\n You are eligible";
+    }
+    else
+    cout<<"\n You are not eligible";
+return 0;
+}
+
+//C++ program where we check if a person is eligible to vote or not.
+// this includes voter id and age 
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int age,temp=0;
+    string voterid;
+    cout <<"Enter your age : "  <<endl;
+    cin >> age;
+     cout <<"Do you have your voter id : "  <<endl;
+    cin >> voterid;
+    if(voterid=="YES"||voterid=="yes")
+    {
+        temp=1;
+    }
+    else
+    temp=0;
+    if((age>=18)&&(temp==1)){
+        cout<<"\n You are eligible";
+    }
+    else
+    cout<<"\n You are not eligible";
+return 0;
+}
