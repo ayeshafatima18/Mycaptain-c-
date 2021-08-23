@@ -1,0 +1,34 @@
+Write a C++ program to Check Whether a Number can be Express as Sum of Two Prime Numbers.
+
+#include <iostream>
+using namespace std;
+int func(int num) {
+   int i;
+   int temp = 1;
+   for(i = 2; i <= num/2; ++i) {
+      if(num % i == 0) {
+         temp = 0;
+         break;
+      }
+   }
+   return temp;
+}
+int main() {
+   int num , i;
+   cout << "Enter a number : \n";
+   cin >> num;
+   for(i = 2; i <= num/2; ++i) {
+      if (func(i)) {
+         if (func(num - i)) {
+            cout << num << " = " << i << " + " << num-i << endl;
+         }
+      }
+   }
+   return 0;
+}
+output :
+Enter a positive integer: 34 
+34 = 3 + 31 
+34 = 5 + 29 
+34 = 11 + 23
+34 = 17 + 17
